@@ -148,6 +148,12 @@ a {
   max-width: 640px;
   text-align: center;
   padding: 0 10px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .wrap-1 {
@@ -188,6 +194,26 @@ p {
   letter-spacing: 0.3mm;
   color: #d7e1e3;
   text-align: justify;
+}
+
+p strong {
+  color: #0cb8f7;
+}
+
+pre {
+  font-family: "Zilla Slab", serif;
+  line-height: 22px;
+  font-size: 15px;
+  background-color: #add8e640;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
 
 ul li {

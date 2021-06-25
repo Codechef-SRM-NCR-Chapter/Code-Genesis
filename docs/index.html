@@ -80,14 +80,149 @@
     <section id="Conditionals" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Conditionals</h1>
-        <h3 class="animate__animated animate__fadeInUp">About</h3>
-        <p class="animate__animated animate__fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem inventore eos hic in labore illo tempora repellat necessitatibus provident. Veritatis officiis porro id ratione expedita, rem inventore saepe at! Praesentium ex at voluptas quidem aut, rem aspernatur ipsam commodi? Omnis nam voluptatibus distinctio, neque repellat alias quam ratione quaerat reiciendis!</p>
+        <h3 class="animate__animated animate__fadeInUp">Notes</h3>
+        <p class="animate__animated animate__fadeInUp">
+          <em><strong>Conditionals</strong></em> are expressions that evaluate to either true or false or simply statements which run under certain conditions. <br>
+          An <em><strong>operator</strong></em> in a programming language is a symbol that is used to perform operation on data. It acts as connector and indicate type of operation being carried out. <br>
+          <em><strong>Operator</strong></em> are broadly classified into 3 types: Unary, Binary, Ternary. <br>
+          <em><strong>If statement:</strong></em> The simplest type of conditional statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not. <br>
+          <em><strong>Else statement:</strong></em> We can use the else statement with if statement to execute a block of code when the condition is false. <br>
+          <em><strong>Nested if :</strong></em> A nested if is an if statement that is the target of another if statement. Nested if statements means an if statement inside another if statement. <br>
+          <em><strong>Else if statement:</strong></em> This is used when we want to deal with more than 2 outcomes of a condition. The execution takes place in top-down fashion i.e if 1st condition is false it moves down to the next until a true condition is found after which it stops checking and executes the statement of that condition. It is also known as if-else if ladder. <br>
+          <em><strong>The break statement:</strong></em> Used to terminate a flow of operations if a certain condition is met.(i.e to exit from a loop) <br>
+          <em><strong>The continue statement:</strong></em> Used to skip the current operation and proceed to next if a certain condition is met. <br>
+          <em><strong>The goto statement:</strong></em> Also referred to as unconditional jump statement can be used to jump from one point to another within a function. <br>
+          <em><strong>The return statement:</strong></em>  Returns the flow of the execution to the function from where it is called. <br>
+          <em><strong>The Switch-Case:</strong></em> Switch case statements are a substitute for long if statements that compare a variable to several integral values. It provides an easy way to dispatch execution to different parts of code based on the value of the expression.
+
+
+        </p>
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, laboriosam?</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, sapiente.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, pariatur.</li>
+            <li>Write a program to calculate the total salary of a person. The user has to enter the basic salary (an integer) and the grade (an uppercase character), and depending upon which the total salary is calculated as <br>
+            <pre>
+<strong>totalSalary = basic + hra + da + allow – pf</strong>
+where : 
+  hra   = 20% of basic
+  da    = 50% of basic
+  allow = 1700 if grade = ‘A’
+  allow = 1500 if grade = ‘B’
+  allow = 1300 if grade = ‘C’ or any other character
+  pf    = 11% of basic.</pre>
+            <pre>
+<em><strong>Example :</strong></em>
+    <strong>Input 1:</strong>
+    10000 A
+    <strong>Output 1:</strong>
+    17600
+    <strong>Input 2:</strong>
+    4567 B
+    <strong>Output 2:</strong>
+    8761</pre>
+    <pre>
+<em><strong>Explanation:</strong></em> 
+We have been given the basic salary as Rs. 4567. We need to calculate the hra, da and pf. Now when we calculate each of the, it turns out to be:
+hra =  20% of Rs. 4567 = Rs. 913.4
+da = 50% od Rs. 4567 = Rs. 2283.5
+pf = 11% of Rs. 4567 = Rs. 502.37
+Since, the grade is 'B', we take allowance as Rs. 1500.
+On substituting these values to the formula of totalSalary, we get Rs. 8761.53 and now taking its integer value, we get 8761.</pre>
+            </li>
+            <li>Write a program where we enter a date in dd/mm/yy format and print it in words using conditional statements.<br>
+            <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input:</strong>
+  22 
+  06 
+  2021
+  <strong>Output:</strong>
+  June 22 2021 </pre>
+              </li>
+              <li>Write a program to calculate and print the Water bill of a given customer. The customer id., name and water consumed by the user in litre should be taken from the user and display the total amount to pay to the customer.
+              <pre>
+<strong>The charges are as follows:</strong> 
+    Unit Charge/litre 
+    upto 199 @3 
+    200 and above but less than 400 @3.35 
+    400 and above but less than 600 @4.80 
+    600 and above @5.10 
+    If bill exceeds Rs. 1250 then a surcharge of 15% will be charged.</pre>
+    <pre>
+<em><strong>Format :</strong></em>
+  <strong>Input Format:</strong>
+    Input Customer ID 
+    Input the name of the customer 
+    Input the litres consumed by the customer 
+  <strong>Output Format:</strong>
+    10001
+    James
+    800
+    4691</pre>            
+    <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input :</strong>
+  10001
+  James
+  800
+  <strong>Output:</strong>
+  10001
+  James
+  800
+  4691</pre>
+                  </li>
+                  <li>Write a program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies.
+<pre>“Quadrant 1” if +x,+y
+  “Quadrant 2” if -x,+y
+  “Quadrant 3” if -x,-y
+  “Quadrant 4” if +x,-y
+  “X axis” if x,0
+  “Y axis” if 0,y
+  “Origin” if 0,0</pre>
+    <pre>
+<em><strong>Format :</strong></em>
+  <strong>Input Format:</strong>
+    The only line of input contains two integers separated by a single space.
+  <strong>Output Format:</strong>
+    The only line of the output prints the Position of the point in the coordinate system.</pre>            
+    <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1:</strong>
+    5 100
+  <strong>Output 1:</strong>
+    Quadrant 1
+  <strong>Input 2:</strong>
+    0 -80
+  <strong>Output 2:</strong>
+    Y axis</pre>
+<pre>
+<em><strong>Explanation:</strong></em> 
+  Since x is 0 and the point lies in y-axis</pre>
+                        </li>
+          <li>Write a program to create a simple calculator which can perform basic arithmetic operations like addition, subtraction, multiplication or division depending upon the user input.<br>
+<pre>
+<em><strong>Format :</strong></em>
+  <strong>Input Format:</strong>
+    First 2 lines contain the 2 integwld be performed on.
+    Next line would contain the operator in the character format
+  <strong>Output Format:</strong>
+    Return the answer</pre>            
+<pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1:</strong>
+    6
+    2
+    +
+  <strong>Output 1:</strong>
+    8
+  <strong>Input 2:</strong>
+    7
+    8
+    * 
+  <strong>Output 2:</strong>
+    56
+</pre>
+                            </li>
           </ol>
         </div>
 
@@ -103,13 +238,14 @@
     <section id="Looping" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Looping</h1>
-        <h3 class="animate__animated animate__fadeInUp">About</h3>        <p class="animate__animated animate__fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem inventore eos hic in labore illo tempora repellat necessitatibus provident. Veritatis officiis porro id ratione expedita, rem inventore saepe at! Praesentium ex at voluptas quidem aut, rem aspernatur ipsam commodi? Omnis nam voluptatibus distinctio, neque repellat alias quam ratione quaerat reiciendis!</p>
+        <h3 class="animate__animated animate__fadeInUp">Notes</h3>        
+        <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, laboriosam?</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, sapiente.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, pariatur.</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
           </ol>
         </div>
         
@@ -124,14 +260,14 @@
     <section id="Arrays" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Arrays</h1>
-        <h3 class="animate__animated animate__fadeInUp">About</h3>
-        <p class="animate__animated animate__fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem inventore eos hic in labore illo tempora repellat necessitatibus provident. Veritatis officiis porro id ratione expedita, rem inventore saepe at! Praesentium ex at voluptas quidem aut, rem aspernatur ipsam commodi? Omnis nam voluptatibus distinctio, neque repellat alias quam ratione quaerat reiciendis!</p>
+        <h3 class="animate__animated animate__fadeInUp">Notes</h3>
+        <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, laboriosam?</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, sapiente.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, pariatur.</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
           </ol>
         </div>
 
@@ -146,14 +282,14 @@
     <section id="Strings" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Strings</h1>
-        <h3 class="animate__animated animate__fadeInUp">About</h3>
-        <p class="animate__animated animate__fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem inventore eos hic in labore illo tempora repellat necessitatibus provident. Veritatis officiis porro id ratione expedita, rem inventore saepe at! Praesentium ex at voluptas quidem aut, rem aspernatur ipsam commodi? Omnis nam voluptatibus distinctio, neque repellat alias quam ratione quaerat reiciendis!</p>
+        <h3 class="animate__animated animate__fadeInUp">Notes</h3>
+        <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, laboriosam?</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, sapiente.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, pariatur.</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
           </ol>
         </div>
 
@@ -168,14 +304,14 @@
     <section id="Bit-manipulation" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Bit manipulation</h1>
-        <h3 class="animate__animated animate__fadeInUp">About</h3>
-        <p class="animate__animated animate__fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem inventore eos hic in labore illo tempora repellat necessitatibus provident. Veritatis officiis porro id ratione expedita, rem inventore saepe at! Praesentium ex at voluptas quidem aut, rem aspernatur ipsam commodi? Omnis nam voluptatibus distinctio, neque repellat alias quam ratione quaerat reiciendis!</p>
+        <h3 class="animate__animated animate__fadeInUp">Notes</h3>
+        <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, laboriosam?</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, sapiente.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, pariatur.</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
           </ol>
         </div>
 
@@ -190,14 +326,14 @@
     <section id="Functions" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Functions</h1>
-        <h3 class="animate__animated animate__fadeInUp">About</h3>
-        <p class="animate__animated animate__fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem inventore eos hic in labore illo tempora repellat necessitatibus provident. Veritatis officiis porro id ratione expedita, rem inventore saepe at! Praesentium ex at voluptas quidem aut, rem aspernatur ipsam commodi? Omnis nam voluptatibus distinctio, neque repellat alias quam ratione quaerat reiciendis!</p>
+        <h3 class="animate__animated animate__fadeInUp">Notes</h3>
+        <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, laboriosam?</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, sapiente.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, pariatur.</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
           </ol>
         </div>
         
@@ -212,14 +348,14 @@
     <section id="Structures" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Structures/classes</h1>
-        <h3 class="animate__animated animate__fadeInUp">About</h3>
-        <p class="animate__animated animate__fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem inventore eos hic in labore illo tempora repellat necessitatibus provident. Veritatis officiis porro id ratione expedita, rem inventore saepe at! Praesentium ex at voluptas quidem aut, rem aspernatur ipsam commodi? Omnis nam voluptatibus distinctio, neque repellat alias quam ratione quaerat reiciendis!</p>
+        <h3 class="animate__animated animate__fadeInUp">Notes</h3>
+        <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, laboriosam?</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, sapiente.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, pariatur.</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
           </ol>
         </div>
 
@@ -234,14 +370,14 @@
     <section id="Recursion" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Basic Recursion</h1>
-        <h3 class="animate__animated animate__fadeInUp">About</h3>
-        <p class="animate__animated animate__fadeInUp">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem inventore eos hic in labore illo tempora repellat necessitatibus provident. Veritatis officiis porro id ratione expedita, rem inventore saepe at! Praesentium ex at voluptas quidem aut, rem aspernatur ipsam commodi? Omnis nam voluptatibus distinctio, neque repellat alias quam ratione quaerat reiciendis!</p>
+        <h3 class="animate__animated animate__fadeInUp">Notes</h3>
+        <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, laboriosam?</li>
-            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, sapiente.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, pariatur.</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
+            <li>Yet to Upload !</li>
           </ol>
         </div>
 
