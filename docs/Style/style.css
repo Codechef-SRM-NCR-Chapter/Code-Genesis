@@ -271,6 +271,21 @@ ul li a:hover {
   overflow: hidden;
 }
 
+.useful-link a {
+  font-family: "Zilla Slab", serif;
+  letter-spacing: 0.3mm;
+  text-decoration: none;
+  display: block;
+  color: #d7e1e3;
+  transition: 0.5s;
+  line-height: 45px;
+  text-align: left;
+}
+
+.useful-link a:hover {
+  color: #64d1f8;
+}
+
 ol li {
   font-family: "Zilla Slab", serif;
   font-size: 20px;
@@ -299,6 +314,7 @@ ol li {
   ul li a {
     font-size: 27px;
     line-height: 30px;
+    text-decoration: underline solid #d7e1e3;
   }
 
   .webinar img {
