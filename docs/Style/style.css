@@ -170,6 +170,7 @@ h1 {
   background: -webkit-linear-gradient(to left, #0cb8f7 0%, #096af2 100%);
   background: -moz-linear-gradient(to left, #0cb8f7 0%, #096af2 100%);
   background: linear-gradient(to left, #0cb8f7 0%, #096af2 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -182,6 +183,7 @@ h3 {
   background: -webkit-linear-gradient(to right, #0cb8f7 0%, #096af2 100%);
   background: -moz-linear-gradient(to right, #0cb8f7 0%, #096af2 100%);
   background: linear-gradient(to right, #0cb8f7 0%, #096af2 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 30px;
