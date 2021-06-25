@@ -107,7 +107,6 @@
 }
 
 body {
-  overflow: hidden;
   background: #1c1d1d;
   background-image: url("../Assets/blackorchid.png");
 }
@@ -121,9 +120,14 @@ a {
 }
 
 .wrap {
-  margin: 0 auto;
+  margin: auto;
   max-width: 640px;
   text-align: justify;
+}
+
+.wrap-1 {
+  height: calc(100vh - 50px);
+  overflow: hidden;
 }
 
 h1 {
@@ -143,6 +147,7 @@ p {
   font-family: "Zilla Slab", serif;
   font-size: 20px;
   line-height: 35px;
+  letter-spacing: 0.3mm;
   color: #d7e1e3;
 }
 
@@ -164,13 +169,10 @@ ul li {
 }
 
 .contacts {
-  width: 640px;
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  bottom: 0;
 }
 
 .contacts .iconify {
@@ -179,4 +181,79 @@ ul li {
   color: #f8f8f8;
   cursor: pointer;
   margin: 10px 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrap-1 {
+    height: calc(100vh - 50px);
+  }
+
+  h1 {
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 33px;
+  }
+
+  .webinar img {
+    width: 35vh;
+  }
+
+  .contacts .iconify {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrap-1 {
+    height: calc(100vh - 40px);
+    text-align: center;
+  }
+
+  a {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  h1 {
+    margin: 10px 0;
+    font-size: 50px;
+    letter-spacing: 1mm;
+  }
+
+  p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .contacts .iconify {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  a {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  h1 {
+    font-size: 35px;
+    letter-spacing: 0.7mm;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .webinar img {
+    width: 35vh;
+  }
+
+  .contacts .iconify {
+    font-size: 20px;
+  }
 }
