@@ -116,7 +116,7 @@ a {
   color: #096af2;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  line-height: 35px;
+  line-height: 40px;
 }
 
 .wrap {
@@ -126,8 +126,10 @@ a {
 }
 
 .wrap-1 {
-  height: calc(100vh - 50px);
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+  padding: 0 10px;
 }
 
 h1 {
@@ -149,6 +151,7 @@ p {
   line-height: 35px;
   letter-spacing: 0.3mm;
   color: #d7e1e3;
+  text-align: justify;
 }
 
 ul li {
@@ -170,9 +173,12 @@ ul li {
 
 .contacts {
   display: flex;
-  flex-direction: row;
+  position: fixed;
+  flex-direction: column;
+  right: 5px;
+  top: 0;
+  height: 100vh;
   justify-content: center;
-  align-items: center;
 }
 
 .contacts .iconify {
@@ -180,14 +186,14 @@ ul li {
   font-size: 30px;
   color: #f8f8f8;
   cursor: pointer;
-  margin: 10px 20px;
+  margin: 10px 0;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1200px) {
-  .wrap-1 {
-    height: calc(100vh - 50px);
-  }
-
   h1 {
     margin: 10px 0;
   }
@@ -198,7 +204,7 @@ ul li {
   }
 
   .webinar img {
-    width: 35vh;
+    width: 30vw;
   }
 
   .contacts .iconify {
@@ -207,14 +213,17 @@ ul li {
 }
 
 @media only screen and (max-width: 768px) {
-  .wrap-1 {
-    height: calc(100vh - 40px);
+  .wrap {
     text-align: center;
   }
 
   a {
     font-size: 17px;
     line-height: 25px;
+  }
+
+  .overflow a {
+    line-height: 50px;
   }
 
   h1 {
@@ -228,8 +237,21 @@ ul li {
     line-height: 30px;
   }
 
+  .webinar img {
+    width: 35vw;
+  }
+
+  .contacts {
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
   .contacts .iconify {
     font-size: 25px;
+    margin: 10px 20px;
   }
 }
 
@@ -250,7 +272,7 @@ ul li {
   }
 
   .webinar img {
-    width: 35vh;
+    width: 60vw;
   }
 
   .contacts .iconify {
