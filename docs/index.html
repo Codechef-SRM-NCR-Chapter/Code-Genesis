@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Description" content="Code Genesis" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="Assets/codechef.png">
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
@@ -15,28 +16,24 @@
     <title>Code Genesis</title>
   </head>
 
-  <body>
+  <body oncontextmenu="return false">
 
     <!-- main page -->
+
     <section id="main-page">
       <div class="wrap wrap-1">
         <div class="overflow">
-        <h1 class="animate__animated animate__fadeInUp">CODE GENESIS</h1>
+          <h1 class="animate__animated animate__fadeInUp">CODE GENESIS</h1>
         </div>
         <div class="overflow">
-        <div class="webinar">
-          <img src="Assets/Webinar-bro.png" alt="webinar" class="animate__animated animate__zoomInUp">
-        </div>
+          <div class="webinar">
+            <img src="Assets/Webinar-bro.png" alt="webinar" class="animate__animated animate__zoomInUp">
+          </div>
         </div>
         <div class="overflow">
-        <p class="animate__animated animate__fadeInUp animate__delay-1s">
-          Hey Coders !!! If you’re an aspiring coder ,struggling with the basics
-          of it and trying to make your way into the world of Competitive
-          Programming Look no further. Codechef SRM NCR brings you 🌟 CODE GENESIS
-          🌟 A 20-day long journey by the end of which you shall have a deep
-          rooted understanding of the Competitive Programming and will be more
-          than equipped to begin your CP journey.
-        </p>
+          <p class="animate__animated animate__fadeInUp animate__delay-1s">
+            Hey Coders !!! If you’re an aspiring coder, struggling with the basics of it and trying to make your way into the world of Competitive Programming Look no further. <strong><em>Codechef SRM NCR</em></strong> brings you 🌟<strong><em>CODE GENESIS</em></strong>🌟 A 20-day long journey by the end of which you shall have a deep rooted understanding of the Competitive Programming and will be more than equipped to begin your CP journey.
+          </p>
         </div>
         <div class="overflow">
           <div class="animate__animated animate__fadeInUp animate__delay-2s">
@@ -55,6 +52,7 @@
     </section>
 
     <!-- page 2 / topic -->
+
     <section id="Topics" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">TOPICS</h1>
@@ -77,6 +75,8 @@
       </div>
     </section >
 
+    <!-- Conditions -->
+
     <section id="Conditionals" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Conditionals</h1>
@@ -96,6 +96,8 @@
           <em><strong>The Switch-Case:</strong></em> Switch case statements are a substitute for long if statements that compare a variable to several integral values. It provides an easy way to dispatch execution to different parts of code based on the value of the expression.
         </p>
 
+        <!-- Links -->
+
         <div class="useful-link animate__animated animate__fadeInUp">
           <h3>Useful Links</h3>
           <a href="https://www.geeksforgeeks.org/operators-c-c/" target="_blank">🔗Operators</a>
@@ -105,10 +107,14 @@
         </div>
 
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
+        
+        <!-- questions list -->
+
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Write a program to calculate the total salary of a person. The user has to enter the basic salary (an integer) and the grade (an uppercase character), and depending upon which the total salary is calculated as <br>
-            <pre>
+          <li>Write a program to calculate the total salary of a person. The user has to enter the basic salary (an integer) and the grade (an uppercase character), and depending upon which the total salary is calculated as
+
+<pre>
 <strong>totalSalary = basic + hra + da + allow – pf</strong>
 where : 
   hra   = 20% of basic
@@ -117,7 +123,8 @@ where :
   allow = 1500 if grade = ‘B’
   allow = 1300 if grade = ‘C’ or any other character
   pf    = 11% of basic.</pre>
-            <pre>
+
+<pre>
 <em><strong>Example :</strong></em>
     <strong>Input 1:</strong>
     10000 A
@@ -127,7 +134,8 @@ where :
     4567 B
     <strong>Output 2:</strong>
     8761</pre>
-    <pre>
+
+<pre>
 <em><strong>Explanation:</strong></em> 
 We have been given the basic salary as Rs. 4567. We need to calculate the hra, da and pf. Now when we calculate each of the, it turns out to be:
 hra =  20% of Rs. 4567 = Rs. 913.4
@@ -135,9 +143,11 @@ da = 50% od Rs. 4567 = Rs. 2283.5
 pf = 11% of Rs. 4567 = Rs. 502.37
 Since, the grade is 'B', we take allowance as Rs. 1500.
 On substituting these values to the formula of totalSalary, we get Rs. 8761.53 and now taking its integer value, we get 8761.</pre>
-            </li>
-            <li>Write a program where we enter a date in dd/mm/yy format and print it in words using conditional statements.<br>
-            <pre>
+          </li>
+          
+          <li>Write a program where we enter a date in dd/mm/yy format and print it in words using conditional statements.<br>
+
+<pre>
 <em><strong>Example :</strong></em>
   <strong>Input:</strong>
   22 
@@ -145,9 +155,12 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
   2021
   <strong>Output:</strong>
   June 22 2021 </pre>
-              </li>
-              <li>Write a program to calculate and print the Water bill of a given customer. The customer id., name and water consumed by the user in litre should be taken from the user and display the total amount to pay to the customer.
-              <pre>
+            
+          </li>
+          
+          <li>Write a program to calculate and print the Water bill of a given customer. The customer id., name and water consumed by the user in litre should be taken from the user and display the total amount to pay to the customer.
+
+<pre>
 <strong>The charges are as follows:</strong> 
     Unit Charge/litre 
     upto 199 @3 
@@ -155,7 +168,8 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
     400 and above but less than 600 @4.80 
     600 and above @5.10 
     If bill exceeds Rs. 1250 then a surcharge of 15% will be charged.</pre>
-    <pre>
+
+<pre>
 <em><strong>Format :</strong></em>
   <strong>Input Format:</strong>
     Input Customer ID 
@@ -166,7 +180,8 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
     James
     800
     4691</pre>            
-    <pre>
+  
+<pre>
 <em><strong>Example :</strong></em>
   <strong>Input :</strong>
   10001
@@ -177,8 +192,9 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
   James
   800
   4691</pre>
-                  </li>
-                  <li>Write a program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies.
+          </li>
+          <li>Write a program to accept a coordinate point in an XY coordinate system and determine in which quadrant the coordinate point lies.
+
 <pre>“Quadrant 1” if +x,+y
   “Quadrant 2” if -x,+y
   “Quadrant 3” if -x,-y
@@ -186,13 +202,15 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
   “X axis” if x,0
   “Y axis” if 0,y
   “Origin” if 0,0</pre>
-    <pre>
+    
+<pre>
 <em><strong>Format :</strong></em>
   <strong>Input Format:</strong>
     The only line of input contains two integers separated by a single space.
   <strong>Output Format:</strong>
     The only line of the output prints the Position of the point in the coordinate system.</pre>            
-    <pre>
+
+<pre>
 <em><strong>Example :</strong></em>
   <strong>Input 1:</strong>
     5 100
@@ -202,18 +220,22 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
     0 -80
   <strong>Output 2:</strong>
     Y axis</pre>
+
 <pre>
 <em><strong>Explanation:</strong></em> 
   Since x is 0 and the point lies in y-axis</pre>
-                        </li>
+          </li>
+          
           <li>Write a program to create a simple calculator which can perform basic arithmetic operations like addition, subtraction, multiplication or division depending upon the user input.<br>
+
 <pre>
 <em><strong>Format :</strong></em>
   <strong>Input Format:</strong>
     First 2 lines contain the 2 integwld be performed on.
     Next line would contain the operator in the character format
   <strong>Output Format:</strong>
-    Return the answer</pre>            
+    Return the answer</pre>
+   
 <pre>
 <em><strong>Example :</strong></em>
   <strong>Input 1:</strong>
@@ -229,7 +251,8 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
   <strong>Output 2:</strong>
     56
 </pre>
-                            </li>
+
+          </li>
           </ol>
         </div>
 
@@ -242,6 +265,8 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
       </div>
     </section >
 
+    <!-- Looping -->
+
     <section id="Looping" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Looping</h1>
@@ -250,9 +275,88 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Yet to Upload !</li>
-            <li>Yet to Upload !</li>
-            <li>Yet to Upload !</li>
+            <li>Given a number N, find its square root without using inbuilt functions. You need to find and print only the integral part of the square root of N.<br>
+
+<pre>
+<em><strong>Example :</strong></em>
+  <strong>Input :</strong> 10
+  <strong>Output :</strong> 3</pre>
+              
+            </li>
+            
+            <li>Print the following pattern for the given number of rows.<br>
+
+<pre>
+<em><strong>Example :</strong></em>
+  <strong>Input :</strong>
+      N = 8
+  <strong>Output :</strong>
+      H
+      GH
+      FGH
+      EFGH
+      DEFGH
+      CDEFGH
+      BCDEFGH
+      ABCDEFGH</pre>
+              
+            </li>
+
+            <li>Print the following pattern for the given number of rows.<br>
+
+<pre>
+<em><strong>Example :</strong></em>
+  <strong>Input :</strong>
+      N = 5
+  <strong>Output :</strong>
+      ••*
+      •***
+      *****                          
+      •***           
+      ••*
+<em><small><strong> Note :</strong> The dots represent spaces and N is always odd.</small></em></pre>
+
+            </li>
+            
+            <li>Write a program to print all the prime numbers that fall between 2 numbers given as input by the user.
+
+<pre>
+<em><strong>Example :</strong></em>
+  <strong>Input :</strong>
+      a = 10
+      b = 20  
+  <strong>Output :</strong>
+      11 13 17 19</pre>
+                            
+            </li>
+            <li>Take input a stream of n integer elements, find the second largest element present. <br> 
+              <small>The given elements can contain duplicate elements as well. If only 0 or 1 element is given, the second largest should be <code>INT_MIN ( -2<sup>31</sup> ).</code></small>
+     
+<pre>
+<em><strong>Format :</strong></em>
+  <strong>Input Format :</strong>
+    Line 1 : Total number of elements (n)
+    Line 2 : N elements (separated by space)
+  <strong>Output Format :</strong>
+    Return the answer</pre>              
+
+<pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      4
+      3 9 0 9    
+  <strong>Output 1 :</strong>
+      3
+  <strong>Input 2 :</strong>
+      2
+      4 4    
+  <strong>Output 2 :</strong>
+      -2147483648
+  <strong>Explanation :</strong>
+      Since both the elements are equal here, hence second largest element is INT_MIN i.e. ( -2<sup>31</sup> )
+</pre>
+                            
+            </li>
           </ol>
         </div>
         
@@ -264,6 +368,9 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
 
       </div>
     </section >
+
+    <!-- Arrays -->
+
     <section id="Arrays" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Arrays</h1>
@@ -285,6 +392,8 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
         </div>
       </div>
     </section >
+
+    <!-- strings -->
 
     <section id="Strings" style="display: none">
       <div class="wrap">
@@ -308,6 +417,8 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
       </div>
     </section >
 
+    <!-- Bit manipulation -->
+
     <section id="Bit-manipulation" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Bit manipulation</h1>
@@ -329,6 +440,8 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
         </div>
       </div>
     </section >
+
+    <!-- Functions -->
 
     <section id="Functions" style="display: none">
       <div class="wrap">
@@ -352,6 +465,8 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
       </div>
     </section >
 
+    <!-- Structures -->
+
     <section id="Structures" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Structures/classes</h1>
@@ -374,6 +489,8 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
       </div>
     </section >
 
+    <!-- Recursion -->
+
     <section id="Recursion" style="display: none">
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Basic Recursion</h1>
@@ -395,10 +512,14 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
         </div>
       </div>
     </section >
-    <!-- ripple animation -->
+
+    <!-- ripple animation overlay -->
+    
     <div class="ripple-wrap">
       <div class="ripple"></div>
     </div>
+
+    <!-- Scripts -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
