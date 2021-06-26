@@ -6,9 +6,7 @@ $(document).ready(function () {
     finish = false,
     monitor = function (el) {
       var computed = window.getComputedStyle(el, null),
-        borderwidth = parseFloat(
-          computed.getPropertyValue("border-left-width")
-        );
+        borderwidth = parseFloat(computed.getPropertyValue("border-left-width"));
       if (!finish && borderwidth >= 1500) {
         el.style.WebkitAnimationPlayState = "paused";
         el.style.animationPlayState = "paused";
@@ -28,12 +26,9 @@ $(document).ready(function () {
   storedcontent = $("#Topics").html();
   $("#Topics").remove();
 
-  rippler.bind(
-    "webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend",
-    function (e) {
-      ripple_wrap.removeClass("goripple");
-    }
-  );
+  rippler.bind("webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend", function (e) {
+    ripple_wrap.removeClass("goripple");
+  });
 
   $("body").on("click", ".anchor", function (e) {
     rippler.css("left", e.clientX + "px");
@@ -64,9 +59,7 @@ $(document).ready(function () {
     finish = false,
     monitor = function (el) {
       var computed = window.getComputedStyle(el, null),
-        borderwidth = parseFloat(
-          computed.getPropertyValue("border-left-width")
-        );
+        borderwidth = parseFloat(computed.getPropertyValue("border-left-width"));
       if (!finish && borderwidth >= 1500) {
         el.style.WebkitAnimationPlayState = "paused";
         el.style.animationPlayState = "paused";
@@ -86,12 +79,9 @@ $(document).ready(function () {
   storedcontent1 = $("#Conditionals").html();
   $("#Conditionals").remove();
 
-  rippler.bind(
-    "webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend",
-    function (e) {
-      ripple_wrap.removeClass("goripple");
-    }
-  );
+  rippler.bind("webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend", function (e) {
+    ripple_wrap.removeClass("goripple");
+  });
 
   $("body").on("click", ".anchor-1", function (e) {
     rippler.css("left", e.clientX + "px");
@@ -122,9 +112,7 @@ $(document).ready(function () {
     finish = false,
     monitor = function (el) {
       var computed = window.getComputedStyle(el, null),
-        borderwidth = parseFloat(
-          computed.getPropertyValue("border-left-width")
-        );
+        borderwidth = parseFloat(computed.getPropertyValue("border-left-width"));
       if (!finish && borderwidth >= 1500) {
         el.style.WebkitAnimationPlayState = "paused";
         el.style.animationPlayState = "paused";
@@ -144,12 +132,9 @@ $(document).ready(function () {
   storedcontent2 = $("#Looping").html();
   $("#Looping").remove();
 
-  rippler.bind(
-    "webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend",
-    function (e) {
-      ripple_wrap.removeClass("goripple");
-    }
-  );
+  rippler.bind("webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend", function (e) {
+    ripple_wrap.removeClass("goripple");
+  });
 
   $("body").on("click", ".anchor-2", function (e) {
     rippler.css("left", e.clientX + "px");
@@ -180,9 +165,7 @@ $(document).ready(function () {
     finish = false,
     monitor = function (el) {
       var computed = window.getComputedStyle(el, null),
-        borderwidth = parseFloat(
-          computed.getPropertyValue("border-left-width")
-        );
+        borderwidth = parseFloat(computed.getPropertyValue("border-left-width"));
       if (!finish && borderwidth >= 1500) {
         el.style.WebkitAnimationPlayState = "paused";
         el.style.animationPlayState = "paused";
@@ -202,12 +185,9 @@ $(document).ready(function () {
   storedcontent3 = $("#Arrays").html();
   $("#Arrays").remove();
 
-  rippler.bind(
-    "webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend",
-    function (e) {
-      ripple_wrap.removeClass("goripple");
-    }
-  );
+  rippler.bind("webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend", function (e) {
+    ripple_wrap.removeClass("goripple");
+  });
 
   $("body").on("click", ".anchor-3", function (e) {
     rippler.css("left", e.clientX + "px");
@@ -238,9 +218,7 @@ $(document).ready(function () {
     finish = false,
     monitor = function (el) {
       var computed = window.getComputedStyle(el, null),
-        borderwidth = parseFloat(
-          computed.getPropertyValue("border-left-width")
-        );
+        borderwidth = parseFloat(computed.getPropertyValue("border-left-width"));
       if (!finish && borderwidth >= 1500) {
         el.style.WebkitAnimationPlayState = "paused";
         el.style.animationPlayState = "paused";
@@ -260,12 +238,9 @@ $(document).ready(function () {
   storedcontent4 = $("#Strings").html();
   $("#Strings").remove();
 
-  rippler.bind(
-    "webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend",
-    function (e) {
-      ripple_wrap.removeClass("goripple");
-    }
-  );
+  rippler.bind("webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend", function (e) {
+    ripple_wrap.removeClass("goripple");
+  });
 
   $("body").on("click", ".anchor-4", function (e) {
     rippler.css("left", e.clientX + "px");
@@ -296,9 +271,7 @@ $(document).ready(function () {
     finish = false,
     monitor = function (el) {
       var computed = window.getComputedStyle(el, null),
-        borderwidth = parseFloat(
-          computed.getPropertyValue("border-left-width")
-        );
+        borderwidth = parseFloat(computed.getPropertyValue("border-left-width"));
       if (!finish && borderwidth >= 1500) {
         el.style.WebkitAnimationPlayState = "paused";
         el.style.animationPlayState = "paused";
@@ -318,12 +291,9 @@ $(document).ready(function () {
   storedcontent5 = $("#Bit-manipulation").html();
   $("#Bit-manipulation").remove();
 
-  rippler.bind(
-    "webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend",
-    function (e) {
-      ripple_wrap.removeClass("goripple");
-    }
-  );
+  rippler.bind("webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend", function (e) {
+    ripple_wrap.removeClass("goripple");
+  });
 
   $("body").on("click", ".anchor-5", function (e) {
     rippler.css("left", e.clientX + "px");
@@ -354,9 +324,7 @@ $(document).ready(function () {
     finish = false,
     monitor = function (el) {
       var computed = window.getComputedStyle(el, null),
-        borderwidth = parseFloat(
-          computed.getPropertyValue("border-left-width")
-        );
+        borderwidth = parseFloat(computed.getPropertyValue("border-left-width"));
       if (!finish && borderwidth >= 1500) {
         el.style.WebkitAnimationPlayState = "paused";
         el.style.animationPlayState = "paused";
@@ -376,12 +344,9 @@ $(document).ready(function () {
   storedcontent6 = $("#Functions").html();
   $("#Functions").remove();
 
-  rippler.bind(
-    "webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend",
-    function (e) {
-      ripple_wrap.removeClass("goripple");
-    }
-  );
+  rippler.bind("webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend", function (e) {
+    ripple_wrap.removeClass("goripple");
+  });
 
   $("body").on("click", ".anchor-6", function (e) {
     rippler.css("left", e.clientX + "px");
@@ -412,9 +377,7 @@ $(document).ready(function () {
     finish = false,
     monitor = function (el) {
       var computed = window.getComputedStyle(el, null),
-        borderwidth = parseFloat(
-          computed.getPropertyValue("border-left-width")
-        );
+        borderwidth = parseFloat(computed.getPropertyValue("border-left-width"));
       if (!finish && borderwidth >= 1500) {
         el.style.WebkitAnimationPlayState = "paused";
         el.style.animationPlayState = "paused";
@@ -434,12 +397,9 @@ $(document).ready(function () {
   storedcontent7 = $("#Structures").html();
   $("#Structures").remove();
 
-  rippler.bind(
-    "webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend",
-    function (e) {
-      ripple_wrap.removeClass("goripple");
-    }
-  );
+  rippler.bind("webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend", function (e) {
+    ripple_wrap.removeClass("goripple");
+  });
 
   $("body").on("click", ".anchor-7", function (e) {
     rippler.css("left", e.clientX + "px");
@@ -470,9 +430,7 @@ $(document).ready(function () {
     finish = false,
     monitor = function (el) {
       var computed = window.getComputedStyle(el, null),
-        borderwidth = parseFloat(
-          computed.getPropertyValue("border-left-width")
-        );
+        borderwidth = parseFloat(computed.getPropertyValue("border-left-width"));
       if (!finish && borderwidth >= 1500) {
         el.style.WebkitAnimationPlayState = "paused";
         el.style.animationPlayState = "paused";
@@ -492,12 +450,9 @@ $(document).ready(function () {
   storedcontent8 = $("#Recursion").html();
   $("#Recursion").remove();
 
-  rippler.bind(
-    "webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend",
-    function (e) {
-      ripple_wrap.removeClass("goripple");
-    }
-  );
+  rippler.bind("webkitAnimationEnd oAnimationEnd msAnimationEnd mozAnimationEnd animationend", function (e) {
+    ripple_wrap.removeClass("goripple");
+  });
 
   $("body").on("click", ".anchor-8", function (e) {
     rippler.css("left", e.clientX + "px");
