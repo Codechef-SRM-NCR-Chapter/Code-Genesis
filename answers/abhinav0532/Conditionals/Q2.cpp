@@ -29,7 +29,6 @@ using namespace std;
             case 10:cout<<"October";break;
             case 11:cout<<"November";break;
             default:cout<<"December";break;
-
         }
         cout<<" "<<dd<<" "<<yy;
     }
