@@ -133,14 +133,7 @@
 body {
   background: #1c1d1d;
   background-image: url("../Assets/blackorchid.png");
-}
-
-a {
-  text-decoration: none;
-  color: #096af2;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  line-height: 40px;
+  scroll-behavior: smooth;
 }
 
 .wrap {
@@ -189,6 +182,14 @@ h3 {
   margin-top: 30px;
 }
 
+a {
+  text-decoration: none;
+  color: #096af2;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+}
+
 p {
   font-family: "Zilla Slab", serif;
   font-size: 20px;
@@ -200,43 +201,6 @@ p {
 
 p strong {
   color: #0cb8f7;
-}
-
-pre {
-  font-family: "Zilla Slab", serif;
-  line-height: 22px;
-  font-size: 15px;
-  background-color: #add8e640;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
-}
-
-ul li {
-  display: flex;
-  justify-content: center;
-}
-
-ul li a {
-  display: block;
-  color: #d7e1e3;
-  font-family: "Zilla Slab", serif;
-  font-size: 30px;
-  line-height: 45px;
-  margin: 15px;
-  text-decoration: none;
-  padding: 0;
-  transition: 0.5s;
-}
-
-ul li a:hover {
-  color: #64d1f8;
 }
 
 .webinar {
@@ -271,6 +235,27 @@ ul li a:hover {
   overflow: hidden;
 }
 
+ul li {
+  display: flex;
+  justify-content: center;
+}
+
+ul li a {
+  display: block;
+  color: #d7e1e3;
+  font-family: "Zilla Slab", serif;
+  font-size: 30px;
+  line-height: 45px;
+  margin: 15px;
+  text-decoration: none;
+  padding: 0;
+  transition: 0.5s;
+}
+
+ul li a:hover {
+  color: #64d1f8;
+}
+
 .useful-link a {
   font-family: "Zilla Slab", serif;
   letter-spacing: 0.3mm;
@@ -296,6 +281,25 @@ ol li {
   margin-left: 20px;
 }
 
+pre {
+  font-family: "Zilla Slab", serif;
+  line-height: 22px;
+  font-size: 15px;
+  letter-spacing: .5mm;
+  background-color: #add8e640;
+  color: #d7e1e3;
+  padding: 10px;
+  text-align: justify;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
 @media only screen and (max-width: 1200px) {
   h1 {
     margin: 10px 0;
@@ -306,9 +310,12 @@ ol li {
     line-height: 33px;
   }
 
-  ol li {
-    font-size: 17px;
-    line-height: 33px;
+  .webinar img {
+    width: 30vw;
+  }
+
+  .contacts .iconify {
+    font-size: 25px;
   }
 
   ul li a {
@@ -317,12 +324,9 @@ ol li {
     text-decoration: underline solid #d7e1e3;
   }
 
-  .webinar img {
-    width: 30vw;
-  }
-
-  .contacts .iconify {
-    font-size: 25px;
+  ol li {
+    font-size: 17px;
+    line-height: 33px;
   }
 }
 
@@ -345,15 +349,6 @@ ol li {
     line-height: 30px;
   }
 
-  ol li {
-    font-size: 17px;
-    line-height: 30px;
-  }
-
-  ul li a {
-    font-size: 22px;
-  }
-
   .webinar img {
     width: 35vw;
   }
@@ -369,6 +364,15 @@ ol li {
   .contacts .iconify {
     font-size: 25px;
     margin: 10px 20px;
+  }
+
+  ul li a {
+    font-size: 22px;
+  }
+
+  ol li {
+    font-size: 17px;
+    line-height: 30px;
   }
 }
 
@@ -388,20 +392,20 @@ ol li {
     line-height: 35px;
   }
 
-  ol li {
-    font-size: 17px;
-    line-height: 35px;
-  }
-
-  ul li a {
-    font-size: 20px;
-  }
-
   .webinar img {
     width: 60vw;
   }
 
   .contacts .iconify {
     font-size: 22px;
+  }
+
+  ul li a {
+    font-size: 20px;
+  }
+
+  ol li {
+    font-size: 17px;
+    line-height: 35px;
   }
 }
