@@ -285,8 +285,11 @@ pre {
   font-family: "Zilla Slab", serif;
   line-height: 22px;
   font-size: 15px;
+  letter-spacing: .5mm;
   background-color: #add8e640;
+  color: #d7e1e3;
   padding: 10px;
+  text-align: justify;
   border-radius: 5px;
   margin-bottom: 15px;
   overflow-x: auto;
