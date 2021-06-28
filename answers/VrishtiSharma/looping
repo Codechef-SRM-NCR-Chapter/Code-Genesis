@@ -1,0 +1,35 @@
+# Solution of Ques 1
+
+n = int(input("Enter the value of number : "))
+x = 0
+while(x * x <= n):
+    x+=1
+x-=1
+print(x)
+
+
+# Solution of Ques 2
+n = int(input("Enter the number of rows : "))
+i = 1
+while(i<=n):
+    x = 65 + n - i
+    j = 1
+    while(j<=i):
+        y = x + j - 1
+        print(chr(y), end = "")
+        j+=1
+    print("\t")
+    i+=1
+    
+
+# Solution of Ques 4
+a = int(input("Enter first no. : "))
+b = int(input("Enter second no. : "))
+for num in range(a,b + 1):
+   if num > 1:
+       for i in range(2,num):
+           if (num % i) == 0:
+               break
+       else:
+           print(num, end = " ")
+           
