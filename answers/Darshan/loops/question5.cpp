@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include <climits>
 using namespace std;
 
 int main() {
@@ -11,8 +12,16 @@ int main() {
         cin >> arr[i];
     }
 
+    if(n == 2 || n == 1) {
+        cout << INT_MIN;
+        goto end;
+    }
+
     sort(arr, arr + n);
     reverse(arr, arr + n);
 
     cout << "Second largest element: " << arr[1];
+
+    end:
+    return 0;
 }
