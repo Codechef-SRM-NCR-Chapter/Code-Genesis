@@ -12,7 +12,7 @@ using namespace std;
     int main()
     {
         FIO;
-	    OJ;
+        OJ;
         int a;
         cin>>a;
     int ans=0;
