@@ -133,14 +133,7 @@
 body {
   background: #1c1d1d;
   background-image: url("../Assets/blackorchid.png");
-}
-
-a {
-  text-decoration: none;
-  color: #096af2;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  line-height: 40px;
+  scroll-behavior: smooth;
 }
 
 .wrap {
@@ -189,6 +182,27 @@ h3 {
   margin-top: 30px;
 }
 
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1mm;
+  background: #0cb8f7;
+  background: -webkit-linear-gradient(to right, #0cb8f7 50%, #096af2 50%);
+  background: -moz-linear-gradient(to right, #0cb8f7 50%, #096af2 50%);
+  background: linear-gradient(to right, #0cb8f7 50%, #096af2 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #096af2;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+}
+
 p {
   font-family: "Zilla Slab", serif;
   font-size: 20px;
@@ -200,43 +214,6 @@ p {
 
 p strong {
   color: #0cb8f7;
-}
-
-pre {
-  font-family: "Zilla Slab", serif;
-  line-height: 22px;
-  font-size: 15px;
-  background-color: #add8e640;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
-}
-
-ul li {
-  display: flex;
-  justify-content: center;
-}
-
-ul li a {
-  display: block;
-  color: #d7e1e3;
-  font-family: "Zilla Slab", serif;
-  font-size: 30px;
-  line-height: 45px;
-  margin: 15px;
-  text-decoration: none;
-  padding: 0;
-  transition: 0.5s;
-}
-
-ul li a:hover {
-  color: #64d1f8;
 }
 
 .webinar {
@@ -271,6 +248,27 @@ ul li a:hover {
   overflow: hidden;
 }
 
+ul li {
+  display: flex;
+  justify-content: center;
+}
+
+ul li a {
+  display: block;
+  color: #d7e1e3;
+  font-family: "Zilla Slab", serif;
+  font-size: 30px;
+  line-height: 45px;
+  margin: 15px;
+  text-decoration: none;
+  padding: 0;
+  transition: 0.5s;
+}
+
+ul li a:hover {
+  color: #64d1f8;
+}
+
 .useful-link a {
   font-family: "Zilla Slab", serif;
   letter-spacing: 0.3mm;
@@ -286,6 +284,22 @@ ul li a:hover {
   color: #64d1f8;
 }
 
+.solutions a {
+  display: inline-flex;
+  text-decoration: none;
+  color: #64d1f8;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2mm;
+  line-height: 40px;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.solutions a:hover {
+  color: #d7e1e3;
+}
+
 ol li {
   font-family: "Zilla Slab", serif;
   font-size: 20px;
@@ -294,6 +308,25 @@ ol li {
   color: #d7e1e3;
   text-align: justify;
   margin-left: 20px;
+}
+
+pre {
+  font-family: "Zilla Slab", serif;
+  line-height: 22px;
+  font-size: 15px;
+  letter-spacing: 0.5mm;
+  background-color: #add8e640;
+  color: #d7e1e3;
+  padding: 10px;
+  text-align: justify;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -306,9 +339,12 @@ ol li {
     line-height: 33px;
   }
 
-  ol li {
-    font-size: 17px;
-    line-height: 33px;
+  .webinar img {
+    width: 30vw;
+  }
+
+  .contacts .iconify {
+    font-size: 25px;
   }
 
   ul li a {
@@ -317,12 +353,13 @@ ol li {
     text-decoration: underline solid #d7e1e3;
   }
 
-  .webinar img {
-    width: 30vw;
+  ol li {
+    font-size: 17px;
+    line-height: 33px;
   }
 
-  .contacts .iconify {
-    font-size: 25px;
+  h4 {
+    font-size: 17px;
   }
 }
 
@@ -345,15 +382,6 @@ ol li {
     line-height: 30px;
   }
 
-  ol li {
-    font-size: 17px;
-    line-height: 30px;
-  }
-
-  ul li a {
-    font-size: 22px;
-  }
-
   .webinar img {
     width: 35vw;
   }
@@ -369,6 +397,19 @@ ol li {
   .contacts .iconify {
     font-size: 25px;
     margin: 10px 20px;
+  }
+
+  ul li a {
+    font-size: 22px;
+  }
+
+  ol li {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .solutions a {
+    font-size: 17px;
   }
 }
 
@@ -388,20 +429,24 @@ ol li {
     line-height: 35px;
   }
 
-  ol li {
-    font-size: 17px;
-    line-height: 35px;
-  }
-
-  ul li a {
-    font-size: 20px;
-  }
-
   .webinar img {
     width: 60vw;
   }
 
   .contacts .iconify {
     font-size: 22px;
+  }
+
+  ul li a {
+    font-size: 20px;
+  }
+
+  ol li {
+    font-size: 17px;
+    line-height: 35px;
+  }
+
+  .solutions a {
+    font-size: 16px;
   }
 }

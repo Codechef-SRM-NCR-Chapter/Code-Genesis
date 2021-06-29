@@ -38,7 +38,7 @@ Each session would be followed by set of questions for practice and doubts discu
 * `Answers` Folder include your solutions to the problems inside the folder of yourusername
 
 ### Steps
-1. Fork this repository
+1. Fork this repository.
 2. Read Questions on the provided drive file or on our [website](https://codechef-srm-ncr-chapter.github.io/Code-Genesis)
 3. Make a new folder with your own username in `answers`
 4. Add your answer in your folder, like for conditionals - Question-1 the answer file would be `conditionals/question1.py`
