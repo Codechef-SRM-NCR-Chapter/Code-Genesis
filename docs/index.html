@@ -104,28 +104,113 @@
           <em><strong>Operator</strong></em> are broadly classified into 3 types: Unary, Binary, Ternary. <br />
           <em><strong>If statement:</strong></em> The simplest type of conditional statement. It is used to decide
           whether a certain statement or block of statements will be executed or not i.e if a certain condition is true
-          then a block of statement is executed otherwise not. <br />
+          then a block of statement is executed otherwise not.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+  if(condition) 
+  {
+      // Statements to execute if
+      // condition is true
+  }</pre>
+
+        <p class="animate__animated animate__fadeInUp">
           <em><strong>Else statement:</strong></em> We can use the else statement with if statement to execute a block
-          of code when the condition is false. <br />
+          of code when the condition is false.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+  if (condition)
+  {
+      // Executes this block if
+      // condition is true
+  }
+  else
+  {
+      // Executes this block if
+      // condition is false
+  }</pre>
+
+        <p class="animate__animated animate__fadeInUp">
           <em><strong>Nested if :</strong></em> A nested if is an if statement that is the target of another if
-          statement. Nested if statements means an if statement inside another if statement. <br />
+          statement. Nested if statements means an if statement inside another if statement.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+  if (condition1) 
+  {
+      // Executes when condition1 is true
+      if (condition2) 
+      {
+        // Executes when condition2 is true
+      }
+  }</pre>
+
+        <p class="animate__animated animate__fadeInUp">
           <em><strong>Else if statement:</strong></em> This is used when we want to deal with more than 2 outcomes of a
           condition. The execution takes place in top-down fashion i.e if 1st condition is false it moves down to the
           next until a true condition is found after which it stops checking and executes the statement of that
-          condition. It is also known as if-else if ladder. <br />
+          condition. It is also known as if-else if ladder.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+  if (condition)
+      statement;
+  else if (condition)
+      statement;
+  else
+      statement;</pre>
+
+        <p class="animate__animated animate__fadeInUp">
           <em><strong>The break statement:</strong></em> Used to terminate a flow of operations if a certain condition
-          is met.(i.e to exit from a loop) <br />
+          is met.(i.e to exit from a loop)
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+  break;</pre>
+
+        <p class="animate__animated animate__fadeInUp">
           <em><strong>The continue statement:</strong></em> Used to skip the current operation and proceed to next if a
           certain condition is met.
-          <br />
+        </p>
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+  continue;</pre>
+
+        <p class="animate__animated animate__fadeInUp">
           <em><strong>The goto statement:</strong></em> Also referred to as unconditional jump statement can be used to
-          jump from one point to another within a function. <br />
+          jump from one point to another within a function.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+  goto label;
+  .
+  .
+  .
+  label:</pre>
+
+        <p class="animate__animated animate__fadeInUp">
           <em><strong>The return statement:</strong></em> Returns the flow of the execution to the function from where
-          it is called. <br />
+          it is called. 
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+  return[expression];</pre>
+
+        <p class="animate__animated animate__fadeInUp">
           <em><strong>The Switch-Case:</strong></em> Switch case statements are a substitute for long if statements that
           compare a variable to several integral values. It provides an easy way to dispatch execution to different
           parts of code based on the value of the expression.
         </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+  switch (n)
+  {
+      case 1: // code to be executed if n = 1;
+          break;
+      case 2: // code to be executed if n = 2;
+          break;
+      default: // code to be executed if n doesn't match any cases
+  }</pre>
 
         <!-- Links -->
 
@@ -342,7 +427,7 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
 
         <p class="animate__animated animate__fadeInUp">
           A <em><strong>for loop</strong></em> is a repetition control structure that allows you to efficiently write a
-          loop that needs to execute a specific number of times. <br />
+          loop that needs to execute a specific number of times.
         </p>
 
         <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
@@ -354,7 +439,7 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
 
         <p class="animate__animated animate__fadeInUp">
           A <em><strong>do-while loop</strong></em> is similar to a while loop, except the fact that it is guaranteed to
-          execute at least one time. It checks its condition at the bottom of the loop. <br />
+          execute at least one time. It checks its condition at the bottom of the loop.
         </p>
 
         <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
@@ -368,7 +453,7 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
 
         <p class="animate__animated animate__fadeInUp">
           A loop can be used inside of another loop. This is known as <em><strong>nesting</strong></em
-          >. Nested for loops are most commonly used in problem solving. <br />
+          >. Nested for loops are most commonly used in problem solving.
         </p>
 
         <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax for Nested For loop:</em></strong>
@@ -559,13 +644,224 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Arrays</h1>
         <h3 class="animate__animated animate__fadeInUp">Notes</h3>
-        <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
+        <p class="animate__animated animate__fadeInUp">
+          An <em><strong> array</strong></em> is a collection of similar data items stored at contiguous memory
+          locations and elements can be accessed randomly using indices of an array.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp">
+<strong><em>Syntax to declare an array :</em></strong>
+  dataType arrayName[arraySize];
+<strong><em>Syntax to initialize an array :</em></strong>
+  dataType arrayName[arraySize] = {d1, d2, d3...., dn};</pre>
+
+        <p class="animate__animated animate__fadeInUp">
+          Array elements are <em><strong>accessed</strong></em> by using an integer index. Array index starts with 0 and
+          goes till size of array -1. <br />
+
+          <em><strong>One-dimensional array</strong></em> is a group of elements having the same datatype and are stored
+          in a linear form. <br />
+          <em><strong>Multidimensional arrays </strong></em>in simple words as array of arrays. <br />
+          <em><strong>Two-dimensional arrays</strong></em> can be referred to as arr[i][j] wherein i is considered to be
+          the row number and j is considered to be column number. In this data is stored in rows and columns.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp">
+<strong><em>Syntax of 1-D array:</em></strong>
+  data_type array_name[size];
+<strong><em>Syntax of 2-D array :</em></strong>
+  data_type array_name[row][columns];
+<strong><em>Syntax of 3-D array:</em></strong>
+  data_type array_name[size1][size2][size3];</pre>
+
+        <p class="animate__animated animate__fadeInUp">
+          <em><strong>Sorting </strong></em> means arranging the data in a particular fashion, which can be increasing
+          or decreasing. <br />
+          <em><strong>Searching </strong></em> is the process of finding the required data in the array.<br />
+          There are two techniques of searching elements in array: <br />
+          <em><strong>Sequential Search :</strong></em> We compare targeted element with each element of the array. If
+          the element is found then its position is displayed. <br />
+          <em><strong>Binary Search :</strong></em> Finding the required element in a sorted array by repeatedly halving
+          the array and searching in the half. <br />
+          <em><strong>Vector </strong></em>are same as dynamic arrays with the ability to resize itself automatically
+          when an element is inserted or deleted, with their storage being handled automatically by the container.
+          <br />
+          Vector elements are placed in contiguous storage so that they can be accessed and traversed using iterators.
+          In vectors, data is inserted at the end.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp">
+<strong><em>Syntax to declare an vector :</em></strong>
+    vector&lt;data_type&gt; vector_name(size);</pre>
+
+        <!-- Links -->
+
+        <div class="useful-link animate__animated animate__fadeInUp">
+          <h3>Useful Links</h3>
+          <a href="https://www.geeksforgeeks.org/arrays-in-c-cpp/" target="_blank">🔗 Arrays </a>
+          <a href="https://www.geeksforgeeks.org/multidimensional-arrays-c-cpp/" target="_blank"
+            >🔗 Multidimensional Arrays</a
+          >
+          <a href="https://www.geeksforgeeks.org/vector-in-cpp-stl/" target="_blank">🔗 Vector</a>
+        </div>
+
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Yet to Upload !</li>
-            <li>Yet to Upload !</li>
-            <li>Yet to Upload !</li>
+            <li>
+              Given an array of integers nums and an integer target, return indices of the two numbers such that they
+              add up to target. <br />
+              <small
+                >You may assume that each input would have exactly one solution, and you may not use the same element
+                twice. You can return the answer in any order.</small
+              >
+
+              <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      nums = [2,7,11,15], target = 9   
+  <strong>Output 1 :</strong>
+      [0,1]
+  <strong>Explanation :</strong>
+      Because nums[0] + nums[1] == 9, we return [0, 1].
+  <strong>Input 2 :</strong>
+      nums = [3,2,4], target = 6    
+  <strong>Output 2 :</strong>
+      [1,2]</pre>
+
+              <pre>
+<em><strong>Constraints :</strong></em>
+  • 2 <= nums.length <= 104
+  • -109 <= nums[i] <= 109
+  • -109 <= target <= 109
+  • Only one valid answer exists.</pre>
+            </li>
+
+            <li>
+              Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b],
+              nums[c], nums[d]] such that:. <br />
+              <code>• 0 <= a, b, c, d < n </code> <br />
+              <code>• a, b, c, and d are distinct. </code><br />
+              <code>• nums[a] + nums[b] + nums[c] + nums[d] == targe</code><br />
+              <small>You can return the answer in any order.</small>
+
+              <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      nums = [1,0,-1,0,-2,2], target = 0   
+  <strong>Output 1 :</strong>
+      [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+  <strong>Input 2 :</strong>
+      nums = [2,2,2,2,2], target = 8    
+  <strong>Output 2 :</strong>
+    [[2,2,2,2]]</pre>
+
+              <pre>
+<em><strong>Constraints :</strong></em>
+  • 1 <= nums.length <= 200
+  • -109 <= nums[i] <= 109
+  • -109 <= target <= 109</pre>
+            </li>
+
+            <li>
+              Given an array of integers nums sorted in ascending order, find the starting and ending position of a
+              given target value. <br />
+              <small
+                >If target is not found in the array, return [-1, -1]. You must write an algorithm with O(log n) runtime
+                complexity.</small
+              >
+
+              <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      nums = [5,7,7,8,8,10], target = 8  
+  <strong>Output 1 :</strong>
+      [3,4]
+  <strong>Input 2 :</strong>
+      nums = [5,7,7,8,8,10], target = 6    
+  <strong>Output 2 :</strong>
+      [-1,-1]</pre>
+
+              <pre>
+<em><strong>Constraints :</strong></em>
+  • 0 <= nums.length <= 105
+  • -109 <= nums[i] <= 109
+  • nums is a non-decreasing array.
+  • -109 <= target <= 109</pre>
+            </li>
+
+            <li>
+              Given a triangle array, return the minimum path sum from top to bottom. <br />
+              <small
+                >For each step, you may move to an adjacent number of the row below. More formally, if you are on index
+                i on the current row, you may move to either index i or index i + 1 on the next row.</small
+              >
+
+              <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]   
+  <strong>Output 1 :</strong>
+      11
+  <strong>Explanation :</strong>
+      The triangle looks like:
+         2
+        3 4
+       6 5 7
+      4 1 8 3
+      The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11
+  <strong>Input 2 :</strong>
+      triangle = [[-10]]
+  <strong>Output 2 :</strong>
+      -10</pre>
+
+              <pre>
+<em><strong>Constraints :</strong></em>
+  • 1 <= triangle.length <= 200
+  • triangle[0].length == 1
+  • triangle[i].length == triangle[i - 1].length + 1
+  • -104 <= triangle[i][j] <= 10<sup>4</sup></pre>
+            </li>
+
+            <li>
+              Given an array of integers arr, sort the array by performing a series of pancake flips.<br />
+              In one pancake flip we do the following steps: <br />
+              <code>• Choose an integer k where 1 <= k <= arr.length. </code> <br />
+              <code>• Reverse the sub-array arr[0...k-1] (0-indexed) </code><br />
+              <small
+                >For example, if arr = [3,2,1,4] and we performed a pancake flip choosing k = 3, we reverse the
+                sub-array [3,2,1], so arr = [1,2,3,4] after the pancake flip at k = 3. Return an array of the k-values
+                corresponding to a sequence of pancake flips that sort arr. Any valid answer that sorts the array within
+                10 * arr.length flips will be judged as correct.</small
+              >
+
+              <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      arr = [3,2,4,1]   
+  <strong>Output 1 :</strong>
+      [4,2,4,3]
+  <strong>Explanation :</strong>
+  We perform 4 pancake flips, with k values 4, 2, 4, and 3.
+    Starting state: arr = [3, 2, 4, 1]
+    After 1st flip (k = 4): arr = [1, 4, 2, 3]
+    After 2nd flip (k = 2): arr = [4, 1, 2, 3]
+    After 3rd flip (k = 4): arr = [3, 2, 1, 4]
+    After 4th flip (k = 3): arr = [1, 2, 3, 4], which is sorted.
+  <strong>Input 2 :</strong>
+      arr = [1,2,3]    
+  <strong>Output 2 :</strong>
+      []
+  <strong>Explanation :</strong>
+      The input is already sorted, so there is no need to flip anything.
+      Note that other answers, such as [3, 3], would also be accepted.</pre>
+
+              <pre>
+<em><strong>Constraints :</strong></em>
+  • 1 <= arr.length <= 100
+  • 1 <= arr[i] <= arr.length
+  • All integers in arr are unique</pre>
+            </li>
           </ol>
         </div>
 
@@ -584,12 +880,156 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
         <h1 class="animate__animated animate__fadeInUp">Strings</h1>
         <h3 class="animate__animated animate__fadeInUp">Notes</h3>
         <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
+
+        <!-- Links -->
+
+        <div class="useful-link animate__animated animate__fadeInUp">
+          <h3>Useful Links</h3>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+        </div>
+
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
             <li>Yet to Upload !</li>
             <li>Yet to Upload !</li>
             <li>Yet to Upload !</li>
+
+            <!-- <li>
+              Write a function to find the longest common prefix string amongst an array of strings. <br />
+              <small>If there is no common prefix, return an empty string "". </small>
+
+              <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      strs = ["flower","flow","flight"]  
+  <strong>Output 1 :</strong>
+      "fl"
+  <strong>Input 2 :</strong>
+      strs = ["dog","racecar","car"]
+  <strong>Output 2 :</strong>
+      ""
+  <strong>Explanation :</strong>
+      There is no common prefix among the input strings.</pre>
+
+              <pre>
+<em><strong>Constraints :</strong></em>
+  • 1 <= strs.length <= 200
+  • 0 <= strs[i].length <= 200
+  • strs[i] consists of only lower-case English letters</pre>
+            </li>
+
+            <li>
+              Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2,
+              also represented as a string. <br />
+              <small>
+                <strong>Note : </strong>You must not use any built-in BigInteger library or convert the inputs to
+                integer directly.</small
+              >
+
+              <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      num1 = "2", num2 = "3"
+  <strong>Output 1 :</strong>
+      "6"
+  <strong>Input 2 :</strong>
+      num1 = "123", num2 = "456"
+  <strong>Output 2 :</strong>
+      "56088"</pre>
+
+              <pre>
+<em><strong>Constraints :</strong></em>
+  • 1 <= num1.length, num2.length <= 200
+  • num1 and num2 consist of digits only.
+  • Both num1 and num2 do not contain any leading zero, except the number 0 itself.</pre>
+            </li>
+
+            <li>
+              You are given a string s. You can convert s to a palindrome by adding characters in front of it. <br />
+              <small> Return the shortest palindrome you can find by performing this transformation. </small>
+
+              <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      s = "aacecaaa"
+  <strong>Output 1 :</strong>
+      "aaacecaaa"
+  <strong>Input 2 :</strong>
+      s = "abcd"
+  <strong>Output 2 :</strong>
+      "dcbabcd"</pre>
+
+              <pre>
+<em><strong>Constraints :</strong></em>
+  • 0 <= s.length <= 5 * 10<sup>4</sup>
+  • s consists of lowercase English letters only.</pre>
+            </li>
+
+            <li>
+              Given an array of strings strs, group the anagrams together. You can return the answer in any order.<br />
+              <small
+                >An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
+                typically using all the original letters exactly once.</small
+              >
+
+              <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      strs = ["eat","tea","tan","ate","nat","bat"]
+  <strong>Output 1 :</strong>
+      strs = ["eat","tea","tan","ate","nat","bat"]
+  <strong>Input 2 :</strong>
+      strs = [""]
+  <strong>Output 2 :</strong>
+      [[""]]</pre>
+
+              <pre>
+<em><strong>Constraints :</strong></em>
+  • 1 <= strs.length <= 10<sup>4</sup>
+  • 0 <= strs[i].length <= 100
+  • strs[i] consists of lower-case English letters.</pre>
+            </li>
+
+            <li>
+              You want to form a target string of lowercase letters. <br />
+              <small
+                >At the beginning, your sequence is <code>target.length '?'</code> marks. You also have a stamp of
+                lowercase letters. <br />
+                On each turn, you may place the stamp over the sequence, and replace every letter in the sequence with
+                the corresponding letter from the stamp. You can make up to <code>10 * target.length</code> turns.
+                <br />
+                For example, if the initial sequence is "?????", and your stamp is "abc", then you may make "abc??",
+                "?abc?", "??abc" in the first turn. (Note that the stamp must be fully contained in the boundaries of
+                the sequence in order to stamp.) <br />
+                If the sequence is possible to stamp, then return an array of the index of the left-most letter being
+                stamped at each turn. If the sequence is not possible to stamp, return an empty array. <br />
+                or example, if the sequence is "ababc", and the stamp is "abc", then we could return the answer [0, 2],
+                corresponding to the moves "?????" -> "abc??" -> "ababc". <br />
+                Also, if the sequence is possible to stamp, it is guaranteed it is possible to stamp within
+                <code>10 * target.length</code> moves. Any answers specifying more than this number of moves will not be
+                accepted.</small
+              >
+
+              <pre>
+<em><strong>Example :</strong></em>
+  <strong>Input 1 :</strong>
+      stamp = "abc", target = "ababc"
+  <strong>Output 1 :</strong>
+      [0,2]
+  <strong>Input 2 :</strong>
+      stamp = "abca", target = "aabcaca"
+  <strong>Output 2 :</strong>
+      [3,0,1]</pre>
+
+              <pre>
+<em><strong>Constraints :</strong></em>
+  • 1 <= stamp.length <= target.length <= 1000
+  • stamp and target only contain lowercase letters.</pre>
+            </li> -->
           </ol>
         </div>
 
@@ -608,6 +1048,17 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
         <h1 class="animate__animated animate__fadeInUp">Bit manipulation</h1>
         <h3 class="animate__animated animate__fadeInUp">Notes</h3>
         <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
+
+        <!-- Links -->
+
+        <div class="useful-link animate__animated animate__fadeInUp">
+          <h3>Useful Links</h3>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+        </div>
+
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
@@ -632,6 +1083,17 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
         <h1 class="animate__animated animate__fadeInUp">Functions</h1>
         <h3 class="animate__animated animate__fadeInUp">Notes</h3>
         <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
+
+        <!-- Links -->
+
+        <div class="useful-link animate__animated animate__fadeInUp">
+          <h3>Useful Links</h3>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+        </div>
+
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
@@ -656,6 +1118,17 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
         <h1 class="animate__animated animate__fadeInUp">Structures/classes</h1>
         <h3 class="animate__animated animate__fadeInUp">Notes</h3>
         <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
+
+        <!-- Links -->
+
+        <div class="useful-link animate__animated animate__fadeInUp">
+          <h3>Useful Links</h3>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+        </div>
+
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
@@ -680,6 +1153,17 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
         <h1 class="animate__animated animate__fadeInUp">Basic Recursion</h1>
         <h3 class="animate__animated animate__fadeInUp">Notes</h3>
         <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
+
+        <!-- Links -->
+
+        <div class="useful-link animate__animated animate__fadeInUp">
+          <h3>Useful Links</h3>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+          <a href="" target="_blank">🔗 Link</a>
+        </div>
+
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>

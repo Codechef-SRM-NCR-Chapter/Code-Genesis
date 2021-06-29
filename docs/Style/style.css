@@ -329,6 +329,17 @@ pre {
   word-wrap: break-word;
 }
 
+code {
+  font-family: "Zilla Slab", serif;
+  line-height: 22px;
+  font-size: 15px;
+  letter-spacing: .5mm;
+  background-color: #add8e640;
+  color: #d7e1e3;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
+
 @media only screen and (max-width: 1200px) {
   h1 {
     margin: 10px 0;
