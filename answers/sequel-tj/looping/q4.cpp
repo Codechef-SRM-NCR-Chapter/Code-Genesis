@@ -6,6 +6,8 @@ int main() {
     cin >> a >> b;
     for (int z = a; z <= b; z++)
     {
+        if (z == 0 || z == 1)
+            continue;
         int flag = 0;
         for (int i = 2; i < z; i++)
         {
