@@ -182,6 +182,19 @@ h3 {
   margin-top: 30px;
 }
 
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  letter-spacing: 1mm;
+  background: #0cb8f7;
+  background: -webkit-linear-gradient(to right, #0cb8f7 50%, #096af2 50%);
+  background: -moz-linear-gradient(to right, #0cb8f7 50%, #096af2 50%);
+  background: linear-gradient(to right, #0cb8f7 50%, #096af2 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 a {
   text-decoration: none;
   color: #096af2;
@@ -271,6 +284,22 @@ ul li a:hover {
   color: #64d1f8;
 }
 
+.solutions a {
+  display: inline-flex;
+  text-decoration: none;
+  color: #64d1f8;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.2mm;
+  line-height: 40px;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+
+.solutions a:hover {
+  color: #d7e1e3;
+}
+
 ol li {
   font-family: "Zilla Slab", serif;
   font-size: 20px;
@@ -285,7 +314,7 @@ pre {
   font-family: "Zilla Slab", serif;
   line-height: 22px;
   font-size: 15px;
-  letter-spacing: .5mm;
+  letter-spacing: 0.5mm;
   background-color: #add8e640;
   color: #d7e1e3;
   padding: 10px;
@@ -339,6 +368,10 @@ code {
     font-size: 17px;
     line-height: 33px;
   }
+
+  h4 {
+    font-size: 17px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -385,6 +418,10 @@ code {
     font-size: 17px;
     line-height: 30px;
   }
+
+  .solutions a {
+    font-size: 17px;
+  }
 }
 
 @media only screen and (max-width: 440px) {
@@ -418,5 +455,9 @@ code {
   ol li {
     font-size: 17px;
     line-height: 35px;
+  }
+
+  .solutions a {
+    font-size: 16px;
   }
 }
