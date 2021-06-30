@@ -878,7 +878,45 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Strings</h1>
         <h3 class="animate__animated animate__fadeInUp">Notes</h3>
-        <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
+
+        <p class="animate__animated animate__fadeInUp">
+          A <em><strong>string </strong></em> variable contains a collection of characters surrounded by double quotes.</p>
+
+          <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+     string string_name = "data";
+<strong>Example</strong>
+    string x = "Hello World";</pre>
+
+        <p class="animate__animated animate__fadeInUp">
+          <em><strong>String Concatenation : </strong></em> The + operator can be used between strings to add them together to make a new string. Or you can also concatenate strings with the <code> append()</code> function.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Example</em></strong>
+    string x = "Hello ";
+    string y = "World";
+    string a = x + y;   // Hello World
+    string b = x.append(y); // Hello World </pre>
+
+      <p class="animate__animated animate__fadeInUp">
+        <em><strong>String length : </strong></em> To get the length of a string, use the <code>length()</code> or <code>size()</code> function
+      </p>
+
+      <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+    string_name.length();
+    string_name.size();
+<strong><em>Example</em></strong>
+    string x = "Hello World";
+    cout << x.length();   // 11
+    cout << x.size();   // 11</pre>
+      
+      <p class="animate__animated animate__fadeInUp">
+        <em><strong>Access String : </strong></em> You can access the characters in a string by referring to its index number inside <code>square brackets []</code>. <br>
+        <em>Note: String indexes start with <code>0: [0] is the first character. [1] is the second character</code>, etc.</em> <br>
+        <em><strong>User Input Strings : </strong></em>  The <code>getline()</code> function to read a line of text. It takes <code>cin</code> as the first parameter, and the <code>string variable</code> as second.
+      </p>
+
+      <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+    getline (cin, string_name);</pre>
 
         <!-- Links -->
 
