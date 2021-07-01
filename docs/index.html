@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="Assets/codechef.png" />
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="Style/style.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -879,26 +878,68 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
       <div class="wrap">
         <h1 class="animate__animated animate__fadeInUp">Strings</h1>
         <h3 class="animate__animated animate__fadeInUp">Notes</h3>
-        <p class="animate__animated animate__fadeInUp">Yet to Upload !</p>
+
+        <p class="animate__animated animate__fadeInUp">
+          A <em><strong>string </strong></em> variable contains a collection of characters surrounded by double quotes.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+     string string_name = "data";
+<strong>Example</strong>
+    string x = "Hello World";</pre>
+
+        <p class="animate__animated animate__fadeInUp">
+          <em><strong>String Concatenation : </strong></em> The + operator can be used between strings to add them
+          together to make a new string. Or you can also concatenate strings with the <code> append()</code> function.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Example</em></strong>
+    string x = "Hello ";
+    string y = "World";
+    string a = x + y;   // Hello World
+    string b = x.append(y); // Hello World </pre>
+
+        <p class="animate__animated animate__fadeInUp">
+          <em><strong>String length : </strong></em> To get the length of a string, use the <code>length()</code> or
+          <code>size()</code> function
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+    string_name.length();
+    string_name.size();
+<strong><em>Example</em></strong>
+    string x = "Hello World";
+    cout << x.length();   // 11
+    cout << x.size();   // 11</pre>
+
+        <p class="animate__animated animate__fadeInUp">
+          <em><strong>Access String : </strong></em> You can access the characters in a string by referring to its index
+          number inside <code>square brackets []</code>. <br />
+          <em
+            >Note: String indexes start with <code>0: [0] is the first character. [1] is the second character</code>,
+            etc.</em
+          >
+          <br />
+          <em><strong>User Input Strings : </strong></em> The <code>getline()</code> function to read a line of text. It
+          takes <code>cin</code> as the first parameter, and the <code>string variable</code> as second.
+        </p>
+
+        <pre class="animate__animated animate__fadeInUp"><strong><em>Syntax</em></strong>
+    getline (cin, string_name);</pre>
 
         <!-- Links -->
 
         <div class="useful-link animate__animated animate__fadeInUp">
           <h3>Useful Links</h3>
-          <a href="" target="_blank">🔗 Link</a>
-          <a href="" target="_blank">🔗 Link</a>
-          <a href="" target="_blank">🔗 Link</a>
-          <a href="" target="_blank">🔗 Link</a>
+          <a href="https://www.geeksforgeeks.org/stdstring-class-in-c/" target="_blank">🔗 Strings</a>
+          <a href="https://www.w3schools.com/cpp/cpp_strings.asp" target="_blank">🔗 C++ Strings</a>
+          <a href="https://www.w3schools.com/python/python_strings.asp" target="_blank">🔗 Python Strings</a>
         </div>
 
         <h3 class="animate__animated animate__fadeInUp animate__delay-1s">Questions</h3>
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
-            <li>Yet to Upload !</li>
-            <li>Yet to Upload !</li>
-            <li>Yet to Upload !</li>
-
-            <!-- <li>
+            <li>
               Write a function to find the longest common prefix string amongst an array of strings. <br />
               <small>If there is no common prefix, return an empty string "". </small>
 
@@ -923,29 +964,27 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
             </li>
 
             <li>
-              Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2,
-              also represented as a string. <br />
-              <small>
-                <strong>Note : </strong>You must not use any built-in BigInteger library or convert the inputs to
-                integer directly.</small
-              >
+              There is a sequence of words in CamelCase as a string of letters, having the following properties:
+              <br />
+              • It is a concatenation of one or more words consisting of English letters. <br />
+              • All letters in the first word are lowercase. <br />
+              • For each of the subsequent words, the first letter is uppercase and the rest of the letters are
+              lowercase. <br />
+              <small>Given a string s, determine the number of words in s.</small>
 
               <pre>
 <em><strong>Example :</strong></em>
-  <strong>Input 1 :</strong>
-      num1 = "2", num2 = "3"
-  <strong>Output 1 :</strong>
-      "6"
-  <strong>Input 2 :</strong>
-      num1 = "123", num2 = "456"
-  <strong>Output 2 :</strong>
-      "56088"</pre>
-
-              <pre>
-<em><strong>Constraints :</strong></em>
-  • 1 <= num1.length, num2.length <= 200
-  • num1 and num2 consist of digits only.
-  • Both num1 and num2 do not contain any leading zero, except the number 0 itself.</pre>
+  <strong>Input :</strong>
+      saveChangesInTheEditor
+  <strong>Output :</strong>
+      5
+  <strong>Explanation :</strong>
+      String  contains five words:
+        save
+        Changes
+        In
+        The
+        Editor</pre>
             </li>
 
             <li>
@@ -962,74 +1001,63 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
       s = "abcd"
   <strong>Output 2 :</strong>
       "dcbabcd"</pre>
-
-              <pre>
-<em><strong>Constraints :</strong></em>
-  • 0 <= s.length <= 5 * 10<sup>4</sup>
-  • s consists of lowercase English letters only.</pre>
             </li>
 
             <li>
-              Given an array of strings strs, group the anagrams together. You can return the answer in any order.<br />
+              You are given a sentence s and an integer k. You want to truncate s such that it contains only the first k
+              words. Return s after truncating it. <br />
               <small
-                >An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase,
-                typically using all the original letters exactly once.</small
+                >A sentence is a list of words that are separated by a single space with no leading or trailing spaces.
+                Each of the words consists of only uppercase and lowercase English letters (no punctuation).</small
               >
 
               <pre>
 <em><strong>Example :</strong></em>
-  <strong>Input 1 :</strong>
-      strs = ["eat","tea","tan","ate","nat","bat"]
-  <strong>Output 1 :</strong>
-      strs = ["eat","tea","tan","ate","nat","bat"]
-  <strong>Input 2 :</strong>
-      strs = [""]
-  <strong>Output 2 :</strong>
-      [[""]]</pre>
+  <strong>Input :</strong>
+      s = "Hello how are you Contestant", k = 4
+  <strong>Output :</strong>
+      "Hello how are you"
+  <strong>Explanation :</strong>
+      The words in s are ["Hello", "how" "are", "you", "Contestant"].
+      The first 4 words are ["Hello", "how", "are", "you"].
+      Hence, you should return "Hello how are you".</pre>
 
               <pre>
 <em><strong>Constraints :</strong></em>
-  • 1 <= strs.length <= 10<sup>4</sup>
-  • 0 <= strs[i].length <= 100
-  • strs[i] consists of lower-case English letters.</pre>
+  • 1 <= s.length <= 500
+  • k is in the range [1, the number of words in s].
+  • s consist of only lowercase and uppercase English letters and spaces.
+  • The words in s are separated by a single space.
+  • There are no leading or trailing spaces.</pre>
             </li>
 
             <li>
-              You want to form a target string of lowercase letters. <br />
+              Input a string from the user and change each of its substrings that spells "party" to "pawri". Find the
+              resulting string <br />
               <small
-                >At the beginning, your sequence is <code>target.length '?'</code> marks. You also have a stamp of
-                lowercase letters. <br />
-                On each turn, you may place the stamp over the sequence, and replace every letter in the sequence with
-                the corresponding letter from the stamp. You can make up to <code>10 * target.length</code> turns.
-                <br />
-                For example, if the initial sequence is "?????", and your stamp is "abc", then you may make "abc??",
-                "?abc?", "??abc" in the first turn. (Note that the stamp must be fully contained in the boundaries of
-                the sequence in order to stamp.) <br />
-                If the sequence is possible to stamp, then return an array of the index of the left-most letter being
-                stamped at each turn. If the sequence is not possible to stamp, return an empty array. <br />
-                or example, if the sequence is "ababc", and the stamp is "abc", then we could return the answer [0, 2],
-                corresponding to the moves "?????" -> "abc??" -> "ababc". <br />
-                Also, if the sequence is possible to stamp, it is guaranteed it is possible to stamp within
-                <code>10 * target.length</code> moves. Any answers specifying more than this number of moves will not be
-                accepted.</small
-              >
+                >The first line of the input contains a single integer T denoting the number of test cases. The first
+                and only line of each test case contains a single string S.
+              </small>
 
               <pre>
 <em><strong>Example :</strong></em>
-  <strong>Input 1 :</strong>
-      stamp = "abc", target = "ababc"
+  <strong>Input :</strong>
+      3
+      part
+      partypartiparty
+      yemaihuyemericarhaiauryahapartyhorahihai
   <strong>Output 1 :</strong>
-      [0,2]
-  <strong>Input 2 :</strong>
-      stamp = "abca", target = "aabcaca"
-  <strong>Output 2 :</strong>
-      [3,0,1]</pre>
-
-              <pre>
-<em><strong>Constraints :</strong></em>
-  • 1 <= stamp.length <= target.length <= 1000
-  • stamp and target only contain lowercase letters.</pre>
-            </li> -->
+      part
+      pawripartipawri
+      yemaihuyemericarhaiauryahapawrihorahihai
+<strong>Explanation :</strong>
+    <em>Case 1: </em>
+      There is no substring "party" in the original string.
+    <em>Case 2: </em>
+      The original string has 2 substrings "party".
+    <em>Case 3: </em>
+      There is only a single substring "party" in the original string.</pre>
+            </li>
           </ol>
         </div>
 
@@ -1190,7 +1218,6 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
     <!-- Scripts -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="Js/script.js"></script>
   </body>
 </html>
