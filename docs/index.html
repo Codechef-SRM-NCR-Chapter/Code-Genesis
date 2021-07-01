@@ -940,27 +940,22 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
         <div class="questions animate__animated animate__fadeInUp animate__delay-1s">
           <ol>
             <li>
-              Write a function to find the longest common prefix string amongst an array of strings. <br />
-              <small>If there is no common prefix, return an empty string "". </small>
+              A string is considered to be valid if all characters of the string appear the same number of times. It is also valid if he can remove just 1character at 1 index in the string, and the remaining characters will occur the same number of times. Given a string, determine if it is valid. If so, return YES, otherwise return NO.
 
               <pre>
 <em><strong>Example :</strong></em>
   <strong>Input 1 :</strong>
-      strs = ["flower","flow","flight"]  
+      aabbcd  
   <strong>Output 1 :</strong>
-      "fl"
+      NO
+  <strong>Explanation 1 :</strong>
+      Given s=”aabbcd” , we would need to remove two characters, both c and d->aabb or a and b->abcd, to make it valid. We are limited to removing only one character, so given string is invalid.
   <strong>Input 2 :</strong>
-      strs = ["dog","racecar","car"]
+      abcdefghhgfedecba
   <strong>Output 2 :</strong>
-      ""
-  <strong>Explanation :</strong>
-      There is no common prefix among the input strings.</pre>
-
-              <pre>
-<em><strong>Constraints :</strong></em>
-  • 1 <= strs.length <= 200
-  • 0 <= strs[i].length <= 200
-  • strs[i] consists of only lower-case English letters</pre>
+      YES
+  <strong>Explanation 2 :</strong>
+      All characters occur twice except for which occurs times. We can delete one instance of to have a valid string.</pre>
             </li>
 
             <li>
@@ -988,19 +983,18 @@ On substituting these values to the formula of totalSalary, we get Rs. 8761.53 a
             </li>
 
             <li>
-              You are given a string s. You can convert s to a palindrome by adding characters in front of it. <br />
-              <small> Return the shortest palindrome you can find by performing this transformation. </small>
-
+              Without using inbuilt library functions or recursion, write a program to determine whether a string entered by the user is palindrome or not for T test cases. <br>
+              (USE LOOPING)
               <pre>
 <em><strong>Example :</strong></em>
   <strong>Input 1 :</strong>
-      s = "aacecaaa"
+      abcdbca
   <strong>Output 1 :</strong>
-      "aaacecaaa"
+      YES
   <strong>Input 2 :</strong>
-      s = "abcd"
+      aabb
   <strong>Output 2 :</strong>
-      "dcbabcd"</pre>
+      NO</pre>
             </li>
 
             <li>
