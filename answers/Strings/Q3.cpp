@@ -1,25 +1,27 @@
-#include <math.h>
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
-#include <assert.h>
-#include <limits.h>
-#include <stdbool.h>
-
+ 
 int main()
 {
-
-    int i=1,j;
-    char* s = (char *)malloc(10240 * sizeof(char));
-    scanf("%s",s);
-    
-    for(j=0;s[j];j++)
+    char s[1000];  
+    int i,n,c=0;
+ 
+    printf("Enter  the string : ");
+    gets(s);
+    n=strlen(s);
+ 
+    for(i=0;i<n/2;i++)  
     {
-        if(s[j]>=65&&s[j]<=90)
-        i++;
-    }
-    printf("%d",i);
-    return (0);
-} 
-
-
+    	if(s[i]==s[n-i-1])
+    	c++;
+ 
+ 	}
+ 	if(c==i)
+ 	    printf("string is palindrome");
+    else
+        printf("string is not palindrome");
+ 
+ 	 
+     
+    return 0;
+}

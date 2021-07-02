@@ -8,18 +8,13 @@
 
 int main()
 {
-
-    int i=1,j;
     char* s = (char *)malloc(10240 * sizeof(char));
     scanf("%s",s);
-    
-    for(j=0;s[j];j++)
+    int coun=0,i;
+    for(i=0;i<strlen(s);i++)
     {
-        if(s[j]>=65&&s[j]<=90)
-        i++;
+        if(s[i]>=65 && s[i]<=90){coun++;}
     }
-    printf("%d",i);
+    printf("%d\n",coun+1);
     return (0);
-} 
-
-
+}
