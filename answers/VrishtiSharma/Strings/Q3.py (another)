@@ -1,0 +1,25 @@
+T = int(input("Enter the no. of test cases : "))
+for i in range(T):                               
+    s = input("Enter the word : ")               
+    l = list(s)
+    n = len(l)                                              
+    if (n%2!=0):                                  
+        x=0
+        for i in range(int((n+1)/2)):
+            if l[i] == l[(n-1)-i]:
+                x+=1
+            else:
+                print("NO")
+                break
+    if (n%2==0):
+        x = 0
+        for i in range(int(n/2)):
+            if l[i] == l[(n-1)-i]:
+                x+=1
+            else:
+                print("NO")
+                break
+    if x==int((n+1)/2):
+        print("YES")
+    elif x == int(n/2):
+        print("YES")
