@@ -21,7 +21,7 @@ int main()
     {
         allow = 1300;
     }
-    int totalSalary = basic_salary + int(hra) + int(da) + allow - int(pf);
-    cout << totalSalary << endl;
+    double totalSalary = double(basic_salary) + hra + da + double(allow) - pf;
+    cout << int(totalSalary) << endl;
     return 0;
 }
